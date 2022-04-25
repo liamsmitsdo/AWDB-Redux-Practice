@@ -1,5 +1,6 @@
 import TodoList from './TodoList'
 import {Link, Route, Redirect} from 'react-router-dom'
+import NewTodoForm from './NewTodoForm'
 
 function App() {
 
@@ -12,8 +13,8 @@ function App() {
       <p>
         <Link to="/todos/new">Add a todos</Link>
       </p>
-      <Route path="/todos" component = {TodoList}/>
-      <Route path="/" render={()=> <Redirect to="/todos" />}/>
+        <Route path="/todos" component = {TodoList}/>
+        <Route exact path="/" render={() => <Redirect to="/todos"/>}/>
     </div>
   )
 }
