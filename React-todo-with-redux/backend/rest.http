@@ -1,0 +1,13 @@
+GET http://localhost:3001/api/todos
+
+###
+
+POST http://localhost:3001/api/todos
+Content-Type: application/json
+
+{
+    "task": "sleep"
+}
+
+###
+DELETE http://localhost:3001/api/todos/626913087cdf592204176fe5
